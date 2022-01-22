@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F9FA1C7279C3C8C004E2CB2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9FA1C6279C3C8C004E2CB2 /* LoginInteractor.swift */; };
+		9F9FA1CA279C454E004E2CB2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9FA1C9279C454E004E2CB2 /* HomeViewModel.swift */; };
 		D6673300279ABE8C00CC8AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66732FF279ABE8C00CC8AB3 /* AppDelegate.swift */; };
 		D6673302279ABE8C00CC8AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6673301279ABE8C00CC8AB3 /* SceneDelegate.swift */; };
 		D6673304279ABE8C00CC8AB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6673303279ABE8C00CC8AB3 /* LoginViewController.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F9FA1C6279C3C8C004E2CB2 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9F9FA1C9279C454E004E2CB2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D66732FC279ABE8C00CC8AB3 /* LoginChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66732FF279ABE8C00CC8AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6673301279ABE8C00CC8AB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F9FA1C5279C2EC6004E2CB2 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				9F9FA1C6279C3C8C004E2CB2 /* LoginInteractor.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		9F9FA1C8279C3DA9004E2CB2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F9FA1C9279C454E004E2CB2 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D66732F3279ABE8C00CC8AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +138,8 @@
 		D66732FE279ABE8C00CC8AB3 /* LoginChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				9F9FA1C8279C3DA9004E2CB2 /* ViewModel */,
+				9F9FA1C5279C2EC6004E2CB2 /* UseCase */,
 				D66732FF279ABE8C00CC8AB3 /* AppDelegate.swift */,
 				D6673301279ABE8C00CC8AB3 /* SceneDelegate.swift */,
 				D6673303279ABE8C00CC8AB3 /* LoginViewController.swift */,
@@ -308,11 +330,13 @@
 				D6673304279ABE8C00CC8AB3 /* LoginViewController.swift in Sources */,
 				D6673348279BA6AC00CC8AB3 /* HomeView.swift in Sources */,
 				D6673300279ABE8C00CC8AB3 /* AppDelegate.swift in Sources */,
+				9F9FA1CA279C454E004E2CB2 /* HomeViewModel.swift in Sources */,
 				D667333D279ACF4300CC8AB3 /* ActivityIndicatorViewController.swift in Sources */,
 				D6673302279ABE8C00CC8AB3 /* SceneDelegate.swift in Sources */,
 				D667333F279AD1E400CC8AB3 /* UIViewController+TransitionAsync.swift in Sources */,
 				D6673346279B07F400CC8AB3 /* HomeViewController.swift in Sources */,
 				D667334A279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift in Sources */,
+				9F9FA1C7279C3C8C004E2CB2 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

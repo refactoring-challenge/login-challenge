@@ -2,6 +2,7 @@ import UIKit
 import Entities
 import APIServices
 import Logging
+import SwiftUI
 
 @MainActor
 final class LoginViewController: UIViewController {
@@ -56,8 +57,16 @@ final class LoginViewController: UIViewController {
                 // Activity Indicator を非表示に。
                 await dismiss(animated: true)
 
+                // HomeView に遷移。
+                let destination = UIHostingController(rootView: HomeView(dismiss: { [weak self] in
+                    await self?.dismiss(animated: true)
+                }))
+                destination.modalPresentationStyle = .fullScreen
+                destination.modalTransitionStyle = .flipHorizontal
+                await present(destination, animated: true)
+                
                 // HomeViewController に遷移。
-                performSegue(withIdentifier: "Login", sender: nil)
+                //performSegue(withIdentifier: "Login", sender: nil)
                 
                 // この VC から遷移するのでボタンの押下受け付けは再開しない。
                 // 遷移アニメーション中に処理が実行されることを防ぐ。

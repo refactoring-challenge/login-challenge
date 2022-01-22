@@ -22,6 +22,8 @@
 		D6673341279AFFF900CC8AB3 /* APIServices in Frameworks */ = {isa = PBXBuildFile; productRef = D6673340279AFFF900CC8AB3 /* APIServices */; };
 		D6673343279AFFF900CC8AB3 /* Entities in Frameworks */ = {isa = PBXBuildFile; productRef = D6673342279AFFF900CC8AB3 /* Entities */; };
 		D6673346279B07F400CC8AB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6673345279B07F400CC8AB3 /* HomeViewController.swift */; };
+		D6673348279BA6AC00CC8AB3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6673347279BA6AC00CC8AB3 /* HomeView.swift */; };
+		D667334A279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6673349279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		D667333C279ACF4300CC8AB3 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		D667333E279AD1E400CC8AB3 /* UIViewController+TransitionAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TransitionAsync.swift"; sourceTree = "<group>"; };
 		D6673345279B07F400CC8AB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D6673347279BA6AC00CC8AB3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D6673349279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCoverModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				D66732FF279ABE8C00CC8AB3 /* AppDelegate.swift */,
 				D6673301279ABE8C00CC8AB3 /* SceneDelegate.swift */,
 				D6673303279ABE8C00CC8AB3 /* LoginViewController.swift */,
+				D6673347279BA6AC00CC8AB3 /* HomeView.swift */,
 				D6673345279B07F400CC8AB3 /* HomeViewController.swift */,
 				D6673344279B06F000CC8AB3 /* Supports */,
 				D6673305279ABE8C00CC8AB3 /* Main.storyboard */,
@@ -152,6 +157,7 @@
 		D6673344279B06F000CC8AB3 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				D6673349279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift */,
 				D667333C279ACF4300CC8AB3 /* ActivityIndicatorViewController.swift */,
 				D667333E279AD1E400CC8AB3 /* UIViewController+TransitionAsync.swift */,
 			);
@@ -298,11 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6673304279ABE8C00CC8AB3 /* LoginViewController.swift in Sources */,
+				D6673348279BA6AC00CC8AB3 /* HomeView.swift in Sources */,
 				D6673300279ABE8C00CC8AB3 /* AppDelegate.swift in Sources */,
 				D667333D279ACF4300CC8AB3 /* ActivityIndicatorViewController.swift in Sources */,
 				D6673302279ABE8C00CC8AB3 /* SceneDelegate.swift in Sources */,
 				D667333F279AD1E400CC8AB3 /* UIViewController+TransitionAsync.swift in Sources */,
 				D6673346279B07F400CC8AB3 /* HomeViewController.swift in Sources */,
+				D667334A279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

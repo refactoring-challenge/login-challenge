@@ -14,6 +14,7 @@ struct HomeView: View {
     @State private var isLoggingOut: Bool = false
     
     @State private var presentsActivityIndocator: Bool = false
+    @State private var presentsAuthenticationErrorAlert: Bool = false
     @State private var presentsNetworkErrorAlert: Bool = false
     @State private var presentsServerErrorAlert: Bool = false
     @State private var presentsSystemErrorAlert: Bool = false
@@ -94,6 +95,19 @@ struct HomeView: View {
             }
         }
         .alert(
+            "認証エラー",
+            isPresented: $presentsAuthenticationErrorAlert,
+            actions: {
+                Button("OK") {
+                    Task {
+                        // LoginViewController に遷移。
+                        await dismiss()
+                    }
+                }
+            },
+            message: { Text("再度ログインして下さい。") }
+        )
+        .alert(
             "ネットワークエラー",
             isPresented: $presentsNetworkErrorAlert,
             actions: { Text("閉じる") },
@@ -130,6 +144,11 @@ struct HomeView: View {
             
             // 取得した情報を View に反映。
             self.user = user
+        } catch let error as AuthenticationError {
+            logger.info("\(error)")
+            
+            // エラー情報を表示。
+            presentsAuthenticationErrorAlert = true
         } catch let error as NetworkError {
             logger.info("\(error)")
             

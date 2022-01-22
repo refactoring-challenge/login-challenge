@@ -61,6 +61,22 @@ final class HomeViewController: UIViewController {
                 } else {
                     introductionLabel.text = user.introduction
                 }
+            } catch let error as AuthenticationError {
+                logger.info("\(error)")
+                
+                let alertController: UIAlertController = .init(
+                    title: "認証エラー",
+                    message: "再度ログインして下さい。",
+                    preferredStyle: .alert
+                )
+                alertController.addAction(.init(title: "OK", style: .default, handler: { [weak self] _ in
+                    guard let self = self else { return }
+                    Task {
+                        // LoginViewController に遷移。
+                        await self.presentingViewController?.dismiss(animated: true)
+                    }
+                }))
+                await present(alertController, animated: true)
             } catch let error as NetworkError {
                 logger.info("\(error)")
                 

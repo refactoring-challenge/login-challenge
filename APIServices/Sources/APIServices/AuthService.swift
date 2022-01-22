@@ -25,6 +25,10 @@ public enum AuthService {
         }
         
         token = Data((1 ... 10000).map { _ in UInt8.random(in: 0x00 ...  0xff) })
+        Task {
+            try await Task.sleep(nanoseconds: 30_000_000_000)
+            token = nil
+        }
     }
     
     public static func logOut() async {

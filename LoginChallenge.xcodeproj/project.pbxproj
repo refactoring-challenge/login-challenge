@@ -62,6 +62,7 @@
 		D6673345279B07F400CC8AB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D6673347279BA6AC00CC8AB3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D6673349279BAAED00CC8AB3 /* ActivityIndicatorCoverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCoverModifier.swift; sourceTree = "<group>"; };
+		D667334B279BB34B00CC8AB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		D66732F3279ABE8C00CC8AB3 = {
 			isa = PBXGroup;
 			children = (
+				D667334B279BB34B00CC8AB3 /* README.md */,
 				D66732FE279ABE8C00CC8AB3 /* LoginChallenge */,
 				D6673315279ABE8F00CC8AB3 /* LoginChallengeTests */,
 				D667331F279ABE8F00CC8AB3 /* LoginChallengeUITests */,
